@@ -1,0 +1,307 @@
+@import "fonts.css";
+@import "feedbacks-slider.css";
+@import "gallery-slider.css";
+
+p, span, a {
+    font-size: 32px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 80px;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-link {
+    color: #002856;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
+}
+
+.g-navbar {
+    height: 140px;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+.oferty-btn {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    border: 3px solid #002856;
+    border-radius: 5px;
+}
+
+.g-text {
+    font-family: 'Franklin Gothic Book', sans-serif;
+    color: #757575;
+}
+
+.info-header {
+    color: #001021;
+}
+
+.info-section {
+    margin-top: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+.info-text-section {
+    width: 60%;
+}
+
+.info-shape {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+    user-select: none;
+    z-index: -1;
+}
+
+.info-map {
+    position: absolute;
+    right: -500px;
+    top: -10px;
+    user-select: none;
+    z-index: -1;
+}
+
+.info-important {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    color: #002856;
+    font-weight: bold;
+}
+
+.info-important-gray {
+    color: #757575;
+}
+
+
+.onas-text {
+    color: #fff;
+}
+
+.onas-section {
+    position: relative;
+    padding-top: 250px;
+    background-color: #002856;
+}
+
+.onas-shape-1 {
+    position: absolute;
+    top: -95px;
+    left: 10px;
+    user-select: none;
+}
+
+.onas-shape-2 {
+    position: absolute;
+    top: -95px;
+    left: 160px;
+    user-select: none;
+}
+
+.onas-shape-4 {
+    position: absolute;
+    right: -40px;
+    bottom: 30px;
+    user-select: none;
+}
+
+.onas-shape-3 {
+    position: absolute;
+    top: -95px;
+    left: 315px;
+    user-select: none;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.g-header {
+    position: relative;
+}
+
+.black {
+    color: #001021;
+}
+
+.mt-300 {
+    margin-top: 300px;
+}
+
+.mt-240 {
+    margin-top: 240px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.ml-mr-150 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.pb-240 {
+    padding-bottom: 240px;
+}
+
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+.pt-240 {
+    padding-top: 240px;
+}
+
+.white {
+    color: #fff;
+}
+
+.g-header::before {
+    content: " " url("../../images/shapes/shape-text.png");
+    top: -70px;
+    left: -90px;
+    position: absolute;
+}
+
+.kogo-szukamy {
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    height: 980px;
+}
+
+.arrow {
+    position: absolute;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+.box-link:hover {
+    color: #757575;
+}
+
+.box-link {
+    font-family: 'Franklin Gothic Book', sans-serif;
+    border: 3px solid #E5E5E5;
+    text-align: center;
+    line-height: 318px;
+    border-bottom: transparent;
+    text-decoration: none;
+    height: 318px;
+    width: 665px;
+    background: #FAFAFA;
+}
+
+.box-link-1 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+.box-link-2 {
+    position: absolute;
+    top: 318px;
+    left: 100px;
+}
+
+.box-link-last {
+    border-bottom: 3px solid #E5E5E5;
+    position: absolute;
+    top: 632px;
+    left: 100px;
+}
+
+.kogo-shape-1 {
+    position: absolute;
+    bottom: -50px;
+    left: -150px;
+    user-select: none;
+}
+
+
+.kogo-shape-2 {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    user-select: none;
+    z-index: -1;
+}
+
+.kogo-shape-3 {
+    position: absolute;
+    bottom: -50px;
+    left: 150px;
+    user-select: none;
+    z-index: -1;
+}
+
+.recrut-important {
+    font-family: 'Franklin Gothic Demi', sans-serif;
+}
+
+.recrut-step {
+    border: 3px solid #E5E5E5;
+    padding: 20px;
+}
+
+.cirlce {
+    width: 170px;
+    height: 170px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+footer a img {
+    user-select: none;
+}
+
+.circle-description {
+    font-family: 'Franklin Gothic Demi', sans-serif;
+    display: block;
+    padding-top: 32px;
+    color: #001021;
+    font-size: 24px;
+}
+
+.g-email {
+    text-decoration: none;
+    font-family: 'Fira Code Medium', sans-serif;
+}
+
+.feedback-text {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+}
+
+.feedback-name {
+    font-family: 'Franklin Gothic Demi', sans-serif;
+    font-size: 24px;
+}

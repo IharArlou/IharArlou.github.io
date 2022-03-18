@@ -1,0 +1,33 @@
+.gallery-slider {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    height: 480px;
+    overflow-x: hidden;
+    align-items: flex-start;
+}
+
+.gallery-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.gallery-slider img {
+    user-select: none;
+}
+
+.gallery-slider-item {
+    overflow: hidden;
+    min-width: 380px;
+    max-width: 480px;
+    margin: 0 40px 0 0;
+    position: relative;
+    border-radius: 5px;
+    left: 0;
+    transition: 1s;
+}
+
+.prev-img, .next-img {
+    margin: 0 15px;
+    cursor: pointer;
+}

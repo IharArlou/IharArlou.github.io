@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.prev, .next {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    overflow-x: hidden;
+    align-items: flex-start;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-item img {
+    user-select: none;
+}
+
+.slider-item {
+    min-width: 650px;
+    max-width: 650px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 120px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+.next, .prev {
+    user-select: none;
+}
