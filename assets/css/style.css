@@ -6,6 +6,13 @@ p, span, a {
     font-size: 32px;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 h1 {
     font-family: 'Franklin Gothic Heavy', sans-serif;
     font-size: 80px;
@@ -31,7 +38,13 @@ nav img {
 }
 
 .g-navbar {
-    height: 140px;
+    height: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #002856;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
 }
 
 .wrapper {
@@ -62,10 +75,6 @@ body {
     margin-top: 144px;
     position: relative;
     z-index: 10;
-}
-
-.info-text-section {
-    width: 60%;
 }
 
 .info-shape {
@@ -190,18 +199,14 @@ body {
 }
 
 .kogo-szukamy {
-    margin-left: 150px;
-    margin-right: 150px;
     position: relative;
-    overflow: hidden;
-    height: 980px;
 }
 
 .arrow {
     position: absolute;
     user-select: none;
-    bottom: 0;
-    right: 5%;
+    top: 70%;
+    right: -50px;
     z-index: 2;
 }
 
@@ -213,38 +218,24 @@ body {
     font-family: 'Franklin Gothic Book', sans-serif;
     border: 3px solid #E5E5E5;
     text-align: center;
-    line-height: 318px;
     border-bottom: transparent;
     text-decoration: none;
-    height: 318px;
-    width: 665px;
     background: #FAFAFA;
-}
-
-.box-link-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.box-link-2 {
-    position: absolute;
-    top: 318px;
-    left: 0;
+    height: 200px;
+    line-height: 200px;
+    margin-left: 100px;
 }
 
 .box-link-last {
     border-bottom: 3px solid #E5E5E5;
-    position: absolute;
-    top: 632px;
-    left: 0;
 }
 
 .kogo-shape-1 {
     position: absolute;
     bottom: -50px;
-    left: -150px;
+    left: 300px;
     user-select: none;
+    z-index: -1;
 }
 
 
@@ -271,9 +262,10 @@ body {
 .recrut-step {
     border: 3px solid #E5E5E5;
     padding: 20px;
+    margin: 10px;
 }
 
-.cirlce {
+.circle {
     width: 170px;
     height: 170px;
     background-color: #EEEEEE;
@@ -310,3 +302,145 @@ footer a img {
     font-family: 'Franklin Gothic Demi', sans-serif;
     font-size: 24px;
 }
+
+.recrut-steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recrut-section {
+    padding-top: 300px;
+}
+
+
+@media (max-width: 1366px) {
+    p, span, a, .circle-description {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mt-240 {
+        margin-top: 200px;
+    }
+
+    .mt-300 {
+        margin-top: 260px;
+    }
+
+    .pb-240 {
+        padding-bottom: 200px;
+    }
+
+    .onas-section {
+        padding-top: 200px;
+    }
+
+    .info-section {
+        margin-top: 50px;
+    }
+
+    .info-map {
+        transform: scale(0.8);
+        right: -350px;
+        top: 0;
+    }
+
+    .g-header::before, .onas-shape-4,  .info-shape {
+        transform: scale(0.6);
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .box-link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .info-shape {
+        position: absolute;
+        top: 0;
+        left: 300px;
+    }
+    .info-map {
+        display: none;
+    }
+
+    p, span, a, .circle-description {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .arrow {
+        display: none;
+    }
+    .recrut-section {
+        padding-top: 200px;
+    }
+
+    .mt-240 {
+        margin-top: 120px;
+    }
+
+    .mt-300 {
+        margin-top: 120px;
+    }
+
+    .onas-section {
+        padding-top: 120px;
+    }
+
+    .pb-240 {
+        padding-bottom: 120px;
+    }
+
+    .onas-shape-3,.onas-shape-2,.onas-shape-1 {
+        display: none;
+    }
+
+    #dlaczego .mt-240 {
+        margin-top: 20px;
+    }
+
+    .recrut-steps {
+        flex-direction: column;
+    }
+
+    .pt-240 {
+        padding-top: 120px;
+    }
+
+    .feedback-text {
+        font-size: 18px;
+    }
+
+    .benefity-section .mt-120 {
+        margin-top: 0;
+    }
+    .circle {
+        margin-top: 60px;
+    }
+
+    .slider-item {
+        flex-direction: column;
+        min-width: 350px;
+        max-width: 350px;
+        height: 410px;
+    }
+    .mb-80 {
+        margin-bottom: 0;
+    }
+}
+
+

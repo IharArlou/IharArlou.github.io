@@ -14,23 +14,23 @@ if (gallerySliderItems.length) {
   }
 
   for (const i of gallerySliderItems) {
-    if (movePerImg < (+i.offsetWidth + 40)) {
+    if (+movePerImg < (+i.offsetWidth + 40)) {
       movePerImg = +i.offsetWidth + 40;
     }
     maxMoveImg += +i.offsetWidth + 40;
   }
 
-  gallerySliderItems[0].style.minWidth = '480px'
+  gallerySliderItems[0].style.minWidth = (+movePerImg + 60) + 'px'
 }
 
 const right_mover_img = () => {
-  leng += movePerImg;
+  leng += +movePerImg;
 
   if (leng >= maxMoveImg) {
     leng = 0;
     prevImg.style.opacity = '0.1';
-    gallerySliderItems[0].style.minWidth = '480px'
-    gallerySliderItems[gallerySliderItems.length - 1].style.minWidth = '380px'
+    gallerySliderItems[0].style.minWidth = (+movePerImg + 60) + 'px'
+    gallerySliderItems[gallerySliderItems.length - 1].style.minWidth = (+movePerImg - 40) + 'px'
   } else {
     prevImg.style.opacity = '1';
   }
@@ -45,8 +45,8 @@ const right_mover_img = () => {
 
   if (index < gallerySliderItems.length - 1 && leng) {
     index++
-    gallerySliderItems[index - 1].style.minWidth = '380px'
-    gallerySliderItems[index].style.minWidth = '480px'
+    gallerySliderItems[index - 1].style.minWidth = (+movePerImg - 40) + 'px'
+    gallerySliderItems[index].style.minWidth = (+movePerImg + 60) + 'px'
   } else {
     index = 0
   }
@@ -66,8 +66,8 @@ const left_mover_img = () => {
 
   if (index > 0) {
     index--
-    gallerySliderItems[index + 1].style.minWidth = '380px'
-    gallerySliderItems[index].style.minWidth = '480px'
+    gallerySliderItems[index + 1].style.minWidth = (+movePerImg - 40) + 'px'
+    gallerySliderItems[index].style.minWidth = (+movePerImg + 60) + 'px'
   } else {
     index = 0
   }
