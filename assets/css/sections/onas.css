@@ -25,12 +25,12 @@
     .onas-shape {
         width: 65px;
         height: 52px;
-        right: -20px;
+        right: -25px;
     }
 }
 
 @media (max-width: 900px) {
     .onas-section {
-        padding: 150px 25px 120px;
+        padding: 150px 25px 150px;
     }
 }

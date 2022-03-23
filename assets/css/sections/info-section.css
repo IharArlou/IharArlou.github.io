@@ -97,7 +97,7 @@
 @media (max-width: 900px) {
     .info-shape {
         position: absolute;
-        right: -20px;
+        right: -25px;
         top: 50px;
         left: revert;
     }
