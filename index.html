@@ -1,536 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Godel Technologies - Poland</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/boostrap/bootstrap-grid.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Godel Technologies - Poland</title>
 </head>
 <body>
 
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand"><img src="images/logo.png" alt="godel logo"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item position-relative">
-                        <a href="#onas" class="nav-link">O nas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#dlaczego" class="nav-link">Dlaczego Godel?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#benefity" class="nav-link">Benefity</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#kontakt" class="nav-link">Kontakt</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="https://careers.godeltech.com/en/careers/" target="_blank" rel="noopener" class="nav-link oferty-btn">Nasze
-                        oferty</a>
-                </form>
-            </div>
+<div class="g-container">
+  <nav class="navbar">
+    <div class="navbar__wrap">
+      <div class="logo">
+        <img src="images/logo.png" alt="godel logo" width="216" height="72"/>
+      </div>
+      <div class="hamb">
+        <div class="hamb__field" id="hamb">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-    </nav>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#onas">O nas</a></li>
+        <li><a href="#dlaczego">Dlaczego Godel?</a></li>
+        <li><a href="#benefity">Benefity</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li class="oferty-menu-item"><a
+          href="https://careers.godeltech.com/en/careers/"
+          target="_blank"
+          rel="noopener"
+        >Nasze oferty
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="popup" id="popup"></div>
 
 </div>
 
-<div class="wrapper">
-    <section class="info-section pb-240">
-        <img
-                src="images/shapes/shape.png"
-                alt="shape"
-                class="info-shape"
-        />
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <h1 class="info-header text-start">Godel już w Polsce!</h1>
-                    <p class="g-text text-start pt-4">
-                        Jesteśmy międzynarodową firma zajmująca się dostarczaniem oprogramowania zwinnego Współpracujemy
-                        z
-                        brytyjskimi firmami, aby pomóc im w dostarczaniu rozwiązań o znaczeniu krytycznym.
-                    </p>
-                    <p class="g-text text-start pt-3">
-                        Stacjonujemy już w trzech polskich miastach: <span class="info-important">Łódź</span>, <span
-                            class="info-important">Wrocław</span> i <span class="info-important">Gdańsk</span>.
-                    </p>
-                    <p class="g-text text-start pt-3">Dołącz do nas!</p>
-                </div>
-            </div>
+<section class="g-container">
+  <div class="info-shapes">
+    <img
+      src="images/shapes/shape-4.png"
+      alt="shape"
+    />
+    <img
+      src="images/shapes/shape-4.png"
+      alt="shape"
+    />
+    <img
+      src="images/shapes/shape-4.png"
+      alt="shape"
+    />
+  </div>
 
-            <img
-                    src="images/map.png"
-                    alt="map"
-                    class="info-map"
-                    height="875"
-                    width="1075"
-            />
-        </div>
-    </section>
+  <div class="info-section">
+    <img
+      src="images/shapes/shape.png"
+      alt="shape"
+      class="info-shape"
+    />
 
-    <section id="onas" class="onas-section pb-240 text-center ">
-        <div class="container">
-            <img
-                    src="images/shapes/shape.png"
-                    alt="shape"
-                    class="onas-shape-4"
-            />
-            <img
-                    src="images/shapes/shape.png"
-                    alt="shape"
-                    class="onas-shape-3"
-            />
-            <img
-                    src="images/shapes/shape-shadow-4.png"
-                    alt="shape"
-                    class="onas-shape-2"
-            />
-            <img
-                    src="images/shapes/shape-4.png"
-                    alt="shape"
-                    class="onas-shape-1"
-            />
-            <h1 class="g-header white d-inline-block">O nas</h1>
-            <p class="onas-text pt-4 text-start">
-                Jesteśmy brytyjską firmą zajmującą się dostarczaniem oprogramowania w oparciu o metodologię Agile.
-                Realizujemy projekty technologiczne dla wiodących klientów z Wielkiej Brytanii.
-            </p>
-            <p class="onas-text pt-3 text-start">
-                Klienci wybierają Godel ze względu na doświadczenie firmy w tworzeniu partnerstw
-                opartych na zaufaniu, przejrzystości i pracy zespołowej.
-                W Godel koncentrujemy się na budowaniu silnych, długotrwałych relacji z naszymi klientami od samego
-                początku, kładąc podwaliny pod doskonałą reputację, która wciąż stanowi nasz główny filar.
-            </p>
-            <p class="onas-text pt-3 text-start">
-                W Godel stawiamy na wysoką kulturę pracy, dbając przy tym o dobrą atmosferę oraz integrację naszych
-                pracowników.
-            </p>
-        </div>
-
-    </section>
-
-    <section id="dlaczego" class="mb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <h1 class="g-header black text-start mt-300">Dlaczego Godel?</h1>
-                </div>
-                <div class="col-12 col-mf-8 mt-240">
-                    <p class="g-text text-start pt-3">
-                        Pracując w Godel staniesz się częścią wspaniałej społeczności, która ceni rozwój, wzajemny
-                        szacunek i
-                        zaufanie.
-                    </p>
-                    <p class="g-text text-start pt-3">
-                        Gwarantujemy dostęp do nowych technologii oraz możliwość tworzenia innowacyjnych rozwiązań.
-                        Nasze środowisko
-                        pracy to międzynarodowe zespoły wpływające na jakość współpracy i sukces projektów.
-                    </p>
-                    <p class="g-text text-start pt-3">Wspieramy wszelkie inicjatywy i pomysły pozwalające doskonalić
-                        naszych pracowników i podnosić ich kompetencje. Fundamentem naszych działań są doświadczenia,
-                        wiedza,
-                        pomysły, idee, które każdy z nas wnosi do organizacji.
-                    </p>
-
-                    <p class="g-text text-start pt-3">
-                        <span class="info-important">W Godel mamy misję, ktróra wspólnie realizujemy!</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="container">
-                <span class="prev-img"><img src="images/prev.png" alt=""></span>
-                <span class="next-img"><img src="images/next.png" alt=""></span>
-                <section class="gallery-slider">
-                    <img class="gallery-slider-item" src="images/gallery/1.png" alt="">
-                    <img class="gallery-slider-item" src="images/gallery/2.png" alt="">
-                    <img class="gallery-slider-item" src="images/gallery/3.png" alt="">
-                    <img class="gallery-slider-item" src="images/gallery/4.png" alt="">
-                    <img class="gallery-slider-item" src="images/gallery/5.png" alt="">
-                    <img class="gallery-slider-item" src="images/gallery/6.png" alt="">
-                </section>
-            </div>
-        </div>
-    </section>
-</div>
-
-<section class="kogo-szukamy">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-5 position-relative">
-                <h1 class="g-header black text-start mt-240">Kogo szukamy?</h1>
-                <p class="g-text text-start pt-4">
-                    Sprawdź nasze oferty w trzech lokalizacjach w Polsce
-                </p>
-                <img class="arrow" src="images/direction.png" alt="Arrow">
-            </div>
-            <div class="col-12 col-md-7">
-                <div class="row">
-                    <a href="https://careers.godeltech.com/en/careers/location/lodz/" target="_blank" rel="noopener"
-                       class="box-link g-text">Zobacz oferty w <span class="info-important">Łodzi</span></a>
-                </div>
-                <div class="row">
-                    <a href="https://careers.godeltech.com/en/careers/location/wroclaw/" target="_blank" rel="noopener"
-                       class="box-link  g-text">Zobacz oferty we <span class="info-important">Wrocławiu</span></a>
-                </div>
-                <div class="row position-relative">
-                    <a href="https://careers.godeltech.com/en/careers/location/gdansk/" target="_blank" rel="noopener"
-                       class="box-link box-link-last g-text">Zobacz oferty w <span class="info-important">Gdańsku</span>
-                        <img
-                                src="images/shapes/shape.png"
-                                alt="shape"
-                                class="kogo-shape-1"
-                        />
-                        <img
-                                src="images/shapes/shape.png"
-                                alt="shape"
-                                class="kogo-shape-2"
-                        />
-                        <img
-                                src="images/shapes/shape.png"
-                                alt="shape"
-                                class="kogo-shape-3"
-                        />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="recrut-section">
-    <div class="container">
-        <h1 class="g-header black text-start">Szybki proces rekrutacyjny:</h1>
-        <div class="pt-5 recrut-steps">
-            <p class="recrut-step g-text"><span class="info-important">1.</span> Złóż <span
-                    class="info-important info-important-gray"><b>CV</b></span></p>
-            <p class="recrut-step g-text"><span class="info-important">2.</span> Rozmowa telefoniczna z <span
-                    class="info-important info-important-gray"><b>HR</b></span></p>
-            <p class="recrut-step g-text"><span class="info-important">3.</span> Rozmowa <span
-                    class="info-important info-important-gray"><b>techniczna</b></span></p>
-            <p class="recrut-step g-text"><span class="info-important">4. Oferta</span></p>
-        </div>
-    </div>
-</section>
-
-<section class="benefity-section pt-240" id="benefity">
-    <div class="container text-center">
-        <h1 class="g-header black d-inline-block">Benefity</h1>
-
-        <div class="mt-120">
-            <div class="row">
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/healthcare.svg" alt="healthcare">
-                    </div>
-                    <span class="circle-description text-center">Pakiet medyczny</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/insurance.svg" alt="insurance">
-                    </div>
-                    <span class="circle-description text-center">Grupowe ubezpieczenie na życie</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/sport.svg" alt="sport">
-                    </div>
-                    <span class="circle-description text-center">Karta sportowa</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/language_lessons.svg" alt="language_lessons">
-                    </div>
-                    <span class="circle-description text-center">Lekcje języska angielskiego</span>
-                </div>
-            </div>
-
-            <div class="row mt-120">
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/party.svg" alt="party">
-                    </div>
-                    <span class="circle-description text-center">Imprezy integracyjne</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/courses.svg" alt="courses">
-                    </div>
-                    <span class="circle-description text-center">Szkolenia</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/promotion.svg" alt="promotion">
-                    </div>
-                    <span class="circle-description text-center">Możliwość rozwoju i awansu</span>
-                </div>
-
-                <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
-                    <div class="circle">
-                        <img src="images/benefity/technology.svg" alt="sport">
-                    </div>
-                    <span class="circle-description text-center">Nowoczesne technologie</span>
-                </div>
-            </div>
-
-            <div class="row mt-120">
-                <div class="col-3"></div>
-                <div class="col-12 col-md-6">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 d-flex flex-column align-items-center">
-                            <div class="circle">
-                                <img src="images/benefity/work.svg" alt="work">
-                            </div>
-                            <span class="circle-description text-center">Współpraca w oparciu o dowolny typ umowy</span>
-                        </div>
-                        <div class="col-6 col-sm-6 d-flex flex-column align-items-center">
-                            <div class="circle">
-                                <img src="images/benefity/work_frome_home.svg" alt="work_frome_home">
-                            </div>
-                            <span class="circle-description text-center">Hybrydowy model pracy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="mt-240 container">
-        <span class="prev"><img src="images/prev.png" alt=""></span>
-        <span class="next"><img src="images/next.png" alt=""></span>
-        <section class="slider">
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/1.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Ludzie, atmosfera i przestrzeń, która pozwala samodzielnie zarządzić
-                        czasem
-                        pracy i kompletnie nie
-                        czuć presji, co w moim przypadku uwalnia pokłady kreatywności tak potrzebne w codziennych
-                        zadaniach.”
-                    </p>
-                    <span class="feedback-name mt-3">Adam</span>
-                </div>
-
-            </div>
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/2.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Praca w Godel to przede wszystkim ciekawe, międzynarodowe projeky w
-                        świetnych
-                        zespołach. (...) dla mnie to też możliwość prowadzenia projektu nie tylko jako analityk
-                        biznesowy, ale
-                        także koordynator Agile czy menedżer projektu”
-                    </p>
-                    <span class="feedback-name mt-3">Marek</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/3.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Godel lubię za transparentność, możliwość bezpośredniego
-                        kontaktu z klientem i
-                        za przyjacielskie relacje których na codzień doświadczamy. Współpracujemy z największymi
-                        firmami w
-                        Europie (przede wszystkim z Wielkiej Brytanii), a kontakty biznesowe, które pozyskujemy na
-                        pewno
-                        zaprocentują w przyszłości.”
-                    </p>
-                    <span class="feedback-name mt-3">Mateusz</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/4.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Poza pisaniem kodu, warto rozwijać się także na innych płaszczyznach
-                        IT.
-                        Rekrutacja?
-                        Poprowadzenie meetupu? Szkolenie nowych pracowników? Praca nad technicznym newsletterem?
-                        Hackathon? Godel
-                        zapewni Ci wiele różnych możliwości rozwoju.”
-                    </p>
-                    <span class="feedback-name mt-3">Maciek</span>
-                </div>
-
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/5.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“W Godelu cenię sobie pracę w międzynarodowym środowisku z dobrymi
-                        specjalistami i
-                        w
-                        wysokich standardach technologicznych. Ważne jest dążenie do budowania zgranego zespołu z
-                        jednoczesnym
-                        indywidualnym podejściem do każdego pracownika.”
-                    </p>
-                    <span class="feedback-name mt-3">Jędrzej</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/6.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Wybór Godel w moim przypadku był dość szybki i prosty. Przede
-                        wszystkim ze wzglęgu
-                        na możliwości rozwoju, ale też duży wpływ miała miła, niezwykle przyjacielska i
-                        profesjonalna rozmowa
-                        rekrutacyjna.”
-                    </p>
-                    <span class="feedback-name mt-3">Kasia</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/7.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Pracę w Godel cenię za otwartość ludzi, ktorych tutaj poznałam i z
-                        którymi
-                        współpracuje. Cenię sobie bardzo także niezależność, którą mamy w środowisku pracy, ale i
-                        wsparcie, ktore
-                        otrzymuejmy, kiedy napotykamy jakies wyzwania”
-                    </p>
-                    <span class="feedback-name mt-3">Iwona</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/8.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Pracownicy mają dostęp do szkoleń, dzięki czemu jesteśmy w stanie
-                        rozwijać siebie
-                        i
-                        pomagać w rozwoju innym”
-                    </p>
-                    <span class="feedback-name mt-3">Maciek</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/9.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Godel zainteresował mnie swoją ofertą z uwagi na możliwość pracy w
-                        dziedzinie
-                        rozwiązań chmurowych i technologiach, które są na czasie jeśli chodzi o obszar pracy z
-                        danymi”
-                    </p>
-                    <span class="feedback-name mt-3">Emilia</span>
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="pe-4 pb-4">
-                    <img src="images/feedback/10.png" alt="">
-                </div>
-                <div>
-                    <p class="feedback-text">“Praca w młodej i dynamicznej firmie jak Godel jest bardzo
-                        satysfakcjonująca. Poza wysokim profesjonalizmem jest sporo integracji w trakcie pracy jak i po
-                        pracy, gdzie wspólnie spędzamy czas, poznajemy Łódź, czy uprawiamy razem różne dyscypliny
-                        sportowe.”
-                    </p>
-                    <span class="feedback-name mt-3">Konrad</span>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-</section>
-
-<section class="skontaktuj-section pt-240 pb-200" id="kontakt">
-    <div class="container text-center">
-        <h1 class="g-header black d-inline-block">Skontaktuj się z nami!</h1>
-
-        <p class="g-text mt-80">
-            Jeśli jesteś zainteresowany współpracą, wyślij nam swoje
+    <main>
+      <div class="info-text-section">
+        <h1 class="info-header">Godel już w Polsce!</h1>
+        <p class="g-text">
+          Jesteśmy w 3 polskich miastach i ciągle rośniemy. Nasze pierwsze biuro otworzyliśmy w Łodzi w
+          kwietniu 2021 r.
         </p>
         <p class="g-text">
-            CV na adres <a href="mailto:careers@godeltech.pl" class="info-important g-email">careers@godeltech.pl</a>
+          Obecność Godel w Polsce jest nie tylko atrakcyjna dla klientów z Wielkiej
+          Brytanii ze względu na doskonałą lokalizację, ale również przynosi znaczące korzyści naszej
+          rekrutacji w tym regionie.
         </p>
+        <p class="g-text">Dołącz do nas!</p>
+      </div>
 
-        <p class="g-text mt-5">Gdzie nas znajdziesz?</p>
-
-        <footer class="d-flex justify-content-center">
-            <a class="ms-4 me-4" rel="noopener" target="_blank" href="https://www.facebook.com/godeltech/">
-                <img src="images/social/facebook.png" alt="facebook">
-            </a>
-            <a class="ms-4 me-4" rel="noopener" target="_blank"
-               href="https://www.linkedin.com/company/godel-technologies-europe/">
-                <img src="images/social/linkedin.png" alt="linkedin">
-            </a>
-            <a class="ms-4 me-4" rel="noopener" target="_blank" href="https://www.instagram.com/godel_technologies/">
-                <img src="images/social/instagram.png" alt="instagram">
-            </a>
-        </footer>
-
-        <div class="mt-80 d-flex justify-content-between text-center">
-            <div>
-                <span class="info-important ">Łódź:</span>
-                <p class="g-text mb-0">
-                    Stara Drukarnia
-                </p>
-                <p class="g-text">
-                    ul. Gdańska 130
-                </p>
-            </div>
-
-            <div>
-                <span class="info-important ">Wrocław:</span>
-                <p class="g-text mb-0">
-                    Wrocław Business Garden
-                </p>
-                <p class="g-text">
-                    ul. Legnicka 48 bud.F
-                </p>
-            </div>
-
-            <div>
-                <span class="info-important ">Gdańsk:</span>
-                <p class="g-text mb-0">
-                    wkrótce
-                </p>
-            </div>
-        </div>
-    </div>
+      <div class="info-map-section">
+        <img
+          src="images/map.png"
+          alt="map"
+          class="info-map"
+          height="905"
+          width="1105"
+        />
+      </div>
+    </main>
+  </div>
 </section>
 
-<script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+<section id="onas" class="g-container ">
+  <div class="onas-section">
+    <img
+      src="images/shapes/shape.png"
+      alt="shape"
+      class="onas-shape"
+    />
+    <h1 class="g-header white d-inline-block">O nas</h1>
+    <p class="g-text">
+      Jesteśmy brytyjską firmą zajmującą się dostarczaniem oprogramowania w oparciu o metodologię Agile.
+      Realizujemy projekty technologiczne dla wiodących klientów z Wielkiej Brytanii. Klienci wybierają Godel
+      ze względu na doświadczenie firmy w tworzeniu partnerstw opartych na zaufaniu, przejrzystości i pracy
+      zespołowej.
+    </p>
+    <p class="g-text">
+      W Godel koncentrujemy się na budowaniu silnych, długotrwałych relacji z naszymi klientami od
+      samego początku, kładąc podwaliny pod doskonałą reputację, która wciąż stanowi nasz główny filar.
+    </p>
+    <p class="g-text">
+      W Godel stawiamy na wysoką kulturę pracy, dbając przy tym o dobrą atmosferę <br> oraz integrację naszych
+      pracowników.
+    </p>
+  </div>
+</section>
+
+<section id="dlaczego" class="g-container">
+  <div class="dlaczego-section">
+    <div class="dlaczego-section-header">
+      <h1 class="g-header black">Dlaczego Godel?</h1>
+    </div>
+    <div>
+      <p class="g-text">
+        Pracując w Godel staniesz się częścią wspaniałej społeczności, która ceni rozwój, wzajemny szacunek i
+        zaufanie.
+      </p>
+      <p class="g-text">
+        Gwarantujemy dostęp do nowych technologii <br> oraz możliwość tworzenia innowacyjnych rozwiązań.
+      </p>
+      <p class="g-text">
+        Nasze środowisko
+        pracy to międzynarodowe zespoły wpływające na jakość współpracy i sukces projektów.
+      </p>
+      <p class="g-text">
+        <span class="info-important">W Godel mamy misję, którą wspólnie realizujemy!</span>
+      </p>
+    </div>
+
+  </div>
+  <div class="g-container gallery-slider-section">
+    <span class="prev-img"><img src="images/prev.png" alt=""></span>
+    <span class="next-img"><img src="images/next.png" alt=""></span>
+    <section class="gallery-slider">
+      <img class="gallery-slider-item" src="images/gallery/1.png" alt="">
+      <img class="gallery-slider-item" src="images/gallery/2.png" alt="">
+      <img class="gallery-slider-item" src="images/gallery/3.png" alt="">
+      <img class="gallery-slider-item" src="images/gallery/4.png" alt="">
+      <img class="gallery-slider-item" src="images/gallery/5.png" alt="">
+      <img class="gallery-slider-item" src="images/gallery/6.png" alt="">
+    </section>
+  </div>
+</section>
+
+<section class="g-container">
+  <div class="kogo-szukamy">
+    <div class="kogo-szukamy-header">
+      <h1 class="g-header black">Kogo szukamy?</h1>
+      <p class="g-text text-start">
+        Sprawdź nasze oferty w trzech lokalizacjach w Polsce
+      </p>
+    </div>
+    <div class="kogo-szukamy-arrow">
+      <img class="" src="images/direction.png" alt="Arrow">
+    </div>
+
+    <div class="kogo-szukamy-links">
+      <a href="https://careers.godeltech.com/en/careers/location/lodz/" target="_blank" rel="noopener"
+         class="kogo-szukamy-box-link">Zobacz oferty w <span class="info-important">Łodzi</span></a>
+      <a href="https://careers.godeltech.com/en/careers/location/wroclaw/" target="_blank" rel="noopener"
+         class="kogo-szukamy-box-link">Zobacz oferty we <span class="info-important">Wrocławiu</span></a>
+      <a href="https://careers.godeltech.com/en/careers/location/gdansk/" target="_blank" rel="noopener"
+         class="kogo-szukamy-box-link kogo-szukamy-box-link-last">Zobacz oferty w <span
+        class="info-important">Gdańsku</span>
+      </a>
+      <div class="kogo-szukamy-shapes">
+        <img
+          src="images/shapes/shape.png"
+          alt="shape"
+          class="kogo-shape-1"
+        />
+        <img
+          src="images/shapes/shape.png"
+          alt="shape"
+          class="kogo-shape-2"
+        />
+        <img
+          src="images/shapes/shape.png"
+          alt="shape"
+          class="kogo-shape-3"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="g-container">
+  <div class="recrut-section">
+    <h1 class="g-header black recrut-section-header">Szybki proces rekrutacyjny:</h1>
+    <div class="recrut-steps">
+      <p class="recrut-step g-text"><span class="info-important">1.</span> Złóż <span
+        class="info-important info-important-gray"><b>CV</b></span></p>
+      <p class="recrut-step g-text"><span class="info-important">2.</span> Rozmowa telefoniczna z <span
+        class="info-important info-important-gray"><b>HR</b></span></p>
+      <p class="recrut-step g-text"><span class="info-important">3.</span> Rozmowa <span
+        class="info-important info-important-gray"><b>techniczna</b></span></p>
+      <p class="recrut-step g-text"><span class="info-important">4. Oferta</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="g-container" id="benefity">
+  <div class="benefity-section ">
+    <h1 class="g-header black d-inline-block">Benefity</h1>
+
+    <div>
+      <div class="row">
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/healthcare.svg" alt="healthcare">
+          </div>
+          <span class="benefity-circle-description text-center">Pakiet medyczny</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/insurance.svg" alt="insurance">
+          </div>
+          <span class="benefity-circle-description text-center">Grupowe ubezpieczenie <br> na życie</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/sport.svg" alt="sport">
+          </div>
+          <span class="benefity-circle-description text-center">Karta sportowa</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/language_lessons.svg" alt="language_lessons">
+          </div>
+          <span class="benefity-circle-description text-center">Lekcje języka angielskiego</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/party.svg" alt="party">
+          </div>
+          <span class="benefity-circle-description text-center">Imprezy integracyjne</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/courses.svg" alt="courses">
+          </div>
+          <span class="benefity-circle-description text-center">Szkolenia</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/promotion.svg" alt="promotion">
+          </div>
+          <span class="benefity-circle-description text-center">Możliwość rozwoju i awansu</span>
+        </div>
+
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+          <div class="benefity-circle">
+            <img src="images/benefity/technology.svg" alt="sport">
+          </div>
+          <span class="benefity-circle-description text-center">Nowoczesne technologie</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-6 col-sm-6 d-flex flex-column align-items-center">
+              <div class="benefity-circle">
+                <img src="images/benefity/work.svg" alt="work">
+              </div>
+              <span class="benefity-circle-description text-center">Współpraca w oparciu <br> o dowolny typ umowy</span>
+            </div>
+            <div class="col-6 col-sm-6 d-flex flex-column align-items-center">
+              <div class="benefity-circle">
+                <img src="images/benefity/work_frome_home.svg" alt="work_frome_home">
+              </div>
+              <span class="benefity-circle-description text-center">Hybrydowy model pracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="g-container">
+    <div class="feedback-slider-container">
+      <span class="prev"><img src="images/prev.png" alt=""></span>
+      <span class="next"><img src="images/next.png" alt=""></span>
+      <section class="feedback-slider">
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/1.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Ludzie, atmosfera i przestrzeń, która pozwala samodzielnie zarządzić
+              czasem
+              pracy i kompletnie nie
+              czuć presji, co w moim przypadku uwalnia pokłady kreatywności tak potrzebne w codziennych
+              zadaniach.”
+            </p>
+            <span class="feedback-name mt-4">Adam</span>
+          </div>
+
+        </div>
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/2.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Praca w Godel to przede wszystkim ciekawe, międzynarodowe projekty w
+              świetnych
+              zespołach. (...) dla mnie to też możliwość prowadzenia projektu nie tylko jako analityk
+              biznesowy, ale
+              także koordynator Agile czy menedżer projektu”
+            </p>
+            <span class="feedback-name mt-4">Marek</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/3.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Godel lubię za transparentność, możliwość bezpośredniego
+              kontaktu z klientem i
+              za przyjacielskie relacje których na codzień doświadczamy. Współpracujemy z największymi
+              firmami w
+              Europie (przede wszystkim z Wielkiej Brytanii), a kontakty biznesowe, które pozyskujemy na
+              pewno
+              zaprocentują w przyszłości.”
+            </p>
+            <span class="feedback-name mt-4">Mateusz</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/4.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Poza pisaniem kodu, warto rozwijać się także na innych płaszczyznach
+              IT.
+              Rekrutacja?
+              Poprowadzenie meetupu? Szkolenie nowych pracowników? Praca nad technicznym newsletterem?
+              Hackathon? Godel
+              zapewni Ci wiele różnych możliwości rozwoju.”
+            </p>
+            <span class="feedback-name mt-4">Maciek</span>
+          </div>
+
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/5.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“W Godelu cenię sobie pracę w międzynarodowym środowisku z dobrymi
+              specjalistami i
+              w
+              wysokich standardach technologicznych. Ważne jest dążenie do budowania zgranego zespołu z
+              jednoczesnym
+              indywidualnym podejściem do każdego pracownika.”
+            </p>
+            <span class="feedback-name mt-4">Jędrzej</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/6.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Wybór Godel w moim przypadku był dość szybki i prosty. Przede
+              wszystkim ze wzglęgu
+              na możliwości rozwoju, ale też duży wpływ miała miła, niezwykle przyjacielska i
+              profesjonalna rozmowa
+              rekrutacyjna.”
+            </p>
+            <span class="feedback-name mt-4">Kasia</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/7.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Pracę w Godel cenię za otwartość ludzi, ktorych tutaj poznałam i z
+              którymi
+              współpracuje. Cenię sobie bardzo także niezależność, którą mamy w środowisku pracy, ale i
+              wsparcie, ktore
+              otrzymuemy, kiedy napotykamy jakies wyzwania”
+            </p>
+            <span class="feedback-name mt-4">Iwona</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/8.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Pracownicy mają dostęp do szkoleń, dzięki czemu jesteśmy w stanie
+              rozwijać siebie
+              i
+              pomagać w rozwoju innym”
+            </p>
+            <span class="feedback-name mt-4">Maciek</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/9.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Godel zainteresował mnie swoją ofertą z uwagi na możliwość pracy w
+              dziedzinie
+              rozwiązań chmurowych i technologiach, które są na czasie jeśli chodzi o obszar pracy z
+              danymi”
+            </p>
+            <span class="feedback-name mt-4">Emilia</span>
+          </div>
+        </div>
+
+        <div class="feedback-slider-item">
+          <div class="pe-5 pb-4">
+            <img src="images/feedback/10.png" alt="">
+          </div>
+          <div>
+            <p class="feedback-text">“Praca w młodej i dynamicznej firmie jak Godel jest bardzo
+              satysfakcjonująca. Poza wysokim profesjonalizmem jest sporo integracji w trakcie pracy jak i po
+              pracy, gdzie wspólnie spędzamy czas, poznajemy Łódź, czy uprawiamy razem różne dyscypliny
+              sportowe.”
+            </p>
+            <span class="feedback-name mt-4">Konrad</span>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+</section>
+
+<section class="g-container" id="kontakt">
+  <div class="kontakt-section">
+    <h1 class="g-header black d-inline-block">Skontaktuj się z nami!</h1>
+
+    <p class="g-text">
+      Jeśli jesteś zainteresowany współpracą, wyślij nam swoje
+      <br>
+      CV na adres <a href="mailto:careers@godeltech.pl" class="info-important g-email">careers@godeltech.pl</a>
+    </p>
+
+    <p class="g-text kontakt-address-header">Gdzie nas znajdziesz?</p>
+
+    <footer class="d-flex justify-content-center">
+      <a class="ms-4 me-4" rel="noopener" target="_blank" href="https://www.facebook.com/godeltech/">
+        <img src="images/social/facebook.png" alt="facebook">
+      </a>
+      <a class="ms-4 me-4" rel="noopener" target="_blank"
+         href="https://www.linkedin.com/company/godel-technologies-europe/">
+        <img src="images/social/linkedin.png" alt="linkedin">
+      </a>
+      <a class="ms-4 me-4" rel="noopener" target="_blank" href="https://www.instagram.com/godel_technologies/">
+        <img src="images/social/instagram.png" alt="instagram">
+      </a>
+    </footer>
+
+    <div class="kontakt-addresses">
+      <div>
+        <span>Łódź:</span>
+        <p class="g-text">Stara Drukarnia <br> ul. Gdańska 130</p>
+      </div>
+
+      <div>
+        <span>Wrocław:</span>
+        <p class="g-text">Wrocław Business Garden <br> ul. Legnicka 48 bud.F</p>
+      </div>
+
+      <div>
+        <span>Gdańsk:</span>
+        <p class="g-text">wkrótce</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="assets/js/burger-menu.js"></script>
 <script type="text/javascript" src="assets/js/feedback-slider.js"></script>
 <script type="text/javascript" src="assets/js/gallery-slider.js"></script>
 </body>

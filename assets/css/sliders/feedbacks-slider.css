@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.prev, .next {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.feedback-slider {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    overflow-x: hidden;
+    align-items: flex-start;
+}
+
+.feedback-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.feedback-slider-item img {
+    user-select: none;
+}
+
+.feedback-slider-item {
+    min-width: 650px;
+    max-width: 650px;
+    height: 370px;
+    overflow: hidden;
+    margin: 0 120px 0 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+}
+
+.next, .prev {
+    user-select: none;
+}
+
+.feedback-slider-container {
+    line-height: 36px;
+}
+
+.feedback-slider-container {
+    padding-left: 154px;
+    padding-top: 240px;
+}
+
+.feedback-name {
+    font-family: 'Franklin Gothic Demi', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.feedback-text {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+}
+
+.feedback-slider p {
+    padding-top: 0;
+}
+
+@media (max-width: 1367px) {
+    .feedback-slider-container {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 900px) {
+    .feedback-slider-container {
+        padding-left: 12px;
+        padding-top: 120px;
+        line-height: 28px;
+    }
+
+    .feedback-slider-item {
+        flex-direction: column;
+        min-width: 350px;
+        max-width: 350px;
+        height: 410px;
+        padding-bottom: 40px;
+    }
+
+    .feedback-text {
+        font-size: 18px;
+    }
+
+    .feedback-slider {
+        margin-top: 40px;
+    }
+}

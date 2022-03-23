@@ -1,446 +1,110 @@
-@import "fonts.css";
-@import "feedbacks-slider.css";
-@import "gallery-slider.css";
+@import "fons/fonts.css";
+@import "navbar.css";
+
+@import "sections/_info-section.css";
+@import "sections/_onas.css";
+@import "sections/_dlaczego.css";
+@import "sections/_kogo-szukamy.css";
+@import "sections/_recrit.css";
+@import "sections/_benefity.css";
+@import "sections/_kontakt.css";
+
+@import "sliders/feedbacks-slider.css";
+@import "sliders/gallery-slider.css";
+
+body {
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+
+p, h1 {
+    margin: 0;
+}
 
 p, span, a {
     font-size: 32px;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+p {
+    padding-top: 40px;
 }
 
 h1 {
     font-family: 'Franklin Gothic Heavy', sans-serif;
     font-size: 80px;
-}
-
-ul {
     margin: 0;
 }
 
-ul li {
-    display: inline-block;
-    padding: 15px;
-}
-
-.nav-link {
-    color: #002856;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    font-size: 20px;
-}
-
-nav img {
-    user-select: none;
-}
-
-.g-navbar {
-    height: auto;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #002856;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    font-size: 20px;
-}
-
-.wrapper {
-    overflow-x: hidden;
-}
-
-body {
-    background-color: #FAFAFA;
-    overflow-x: hidden;
-}
-
-.oferty-btn {
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    border: 3px solid #002856;
-    border-radius: 5px;
+.g-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .g-text {
     font-family: 'Franklin Gothic Book', sans-serif;
     color: #757575;
-}
-
-.info-header {
-    color: #001021;
-}
-
-.info-section {
-    margin-top: 144px;
-    position: relative;
-    z-index: 10;
-}
-
-.info-shape {
-    position: absolute;
-    top: 130px;
-    left: -50px;
-    user-select: none;
-    z-index: -1;
-}
-
-.info-map {
-    position: absolute;
-    right: -500px;
-    top: -10px;
-    user-select: none;
-    z-index: -1;
-}
-
-.info-important {
-    font-family: 'Franklin Gothic Heavy', sans-serif;
-    color: #002856;
-    font-weight: bold;
-}
-
-.info-important-gray {
-    color: #757575;
-}
-
-
-.onas-text {
-    color: #fff;
-}
-
-.onas-section {
-    position: relative;
-    padding-top: 250px;
-    background-color: #002856;
-}
-
-.onas-shape-1 {
-    position: absolute;
-    top: -95px;
-    left: 10px;
-    user-select: none;
-}
-
-.onas-shape-2 {
-    position: absolute;
-    top: -95px;
-    left: 160px;
-    user-select: none;
-}
-
-.onas-shape-4 {
-    position: absolute;
-    right: -40px;
-    bottom: 30px;
-    user-select: none;
-}
-
-.onas-shape-3 {
-    position: absolute;
-    top: -95px;
-    left: 315px;
-    user-select: none;
-}
-
-.mb-80 {
-    margin-bottom: 80px;
+    line-height: 45px;
 }
 
 .g-header {
     position: relative;
 }
 
+.g-header::before {
+    content: " " url("../../images/shapes/shape-text.png");
+    top: -68px;
+    left: -87px;
+    position: absolute;
+}
+
 .black {
     color: #001021;
-}
-
-.mt-300 {
-    margin-top: 300px;
-}
-
-.mt-240 {
-    margin-top: 240px;
-}
-
-.mt-120 {
-    margin-top: 120px;
-}
-
-.mt-80 {
-    margin-top: 80px;
-}
-
-.ml-mr-150 {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.pb-240 {
-    padding-bottom: 240px;
-}
-
-.pb-200 {
-    padding-bottom: 200px;
-}
-
-.pt-240 {
-    padding-top: 240px;
 }
 
 .white {
     color: #fff;
 }
 
-.g-header::before {
-    content: " " url("../../images/shapes/shape-text.png");
-    top: -70px;
-    left: -90px;
-    position: absolute;
-}
-
-.kogo-szukamy {
-    position: relative;
-}
-
-.arrow {
-    position: absolute;
-    user-select: none;
-    top: 70%;
-    right: -50px;
-    z-index: 2;
-}
-
-.box-link:hover {
-    color: #757575;
-}
-
-.box-link {
-    font-family: 'Franklin Gothic Book', sans-serif;
-    border: 3px solid #E5E5E5;
-    text-align: center;
-    border-bottom: transparent;
-    text-decoration: none;
-    background: #FAFAFA;
-    height: 200px;
-    line-height: 200px;
-    margin-left: 100px;
-}
-
-.box-link-last {
-    border-bottom: 3px solid #E5E5E5;
-}
-
-.kogo-shape-1 {
-    position: absolute;
-    bottom: -50px;
-    left: 300px;
-    user-select: none;
-    z-index: -1;
-}
-
-
-.kogo-shape-2 {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    user-select: none;
-    z-index: -1;
-}
-
-.kogo-shape-3 {
-    position: absolute;
-    bottom: -50px;
-    left: 150px;
-    user-select: none;
-    z-index: -1;
-}
-
-.recrut-important {
-    font-family: 'Franklin Gothic Demi', sans-serif;
-}
-
-.recrut-step {
-    border: 3px solid #E5E5E5;
-    padding: 20px;
-    margin: 10px;
-}
-
-.circle {
-    width: 170px;
-    height: 170px;
-    background-color: #EEEEEE;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-}
-
-footer a img {
-    user-select: none;
-}
-
-.circle-description {
-    font-family: 'Franklin Gothic Demi', sans-serif;
-    display: block;
-    padding-top: 32px;
-    color: #001021;
-    font-size: 24px;
-}
-
-.g-email {
-    text-decoration: none;
-    font-family: 'Fira Code Medium', sans-serif;
-}
-
-.feedback-text {
-    font-size: 24px;
-    font-family: 'Franklin Gothic Book', sans-serif;
-}
-
-.feedback-name {
-    font-family: 'Franklin Gothic Demi', sans-serif;
-    font-size: 24px;
-}
-
-.recrut-steps {
-    display: flex;
-    justify-content: space-between;
-}
-
-.recrut-section {
-    padding-top: 300px;
-}
-
-
-@media (max-width: 1366px) {
-    p, span, a, .circle-description {
-        font-size: 20px;
+@media (max-width: 1367px) {
+    p, span, a {
+        font-size: 24px;
     }
 
     h1 {
-        font-size: 68px;
+        font-size: 60px;
+    }
+
+    .g-header::before {
+        transform: scale(.7);
+        top: -60px;
+        left: -77px;
+    }
+
+    p {
+        padding-top: 35px;
     }
 }
 
-@media (max-width: 1024px) {
-    .mt-240 {
-        margin-top: 200px;
-    }
-
-    .mt-300 {
-        margin-top: 260px;
-    }
-
-    .pb-240 {
-        padding-bottom: 200px;
-    }
-
-    .onas-section {
-        padding-top: 200px;
-    }
-
-    .info-section {
-        margin-top: 50px;
-    }
-
-    .info-map {
-        transform: scale(0.8);
-        right: -350px;
-        top: 0;
-    }
-
-    .g-header::before, .onas-shape-4,  .info-shape {
-        transform: scale(0.6);
-    }
-
-    .circle {
-        width: 120px;
-        height: 120px;
-    }
-
-    .box-link {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 830px) {
-    .info-shape {
-        position: absolute;
-        top: 0;
-        left: 300px;
-    }
-    .info-map {
-        display: none;
-    }
-
-    p, span, a, .circle-description {
-        font-size: 18px;
+@media (max-width: 900px) {
+    p, span, a {
+        font-size: 20px;
     }
 
     h1 {
         font-size: 50px;
     }
 
-    .arrow {
-        display: none;
-    }
-    .recrut-section {
-        padding-top: 200px;
+    .g-text {
+        line-height: 35px;
     }
 
-    .mt-240 {
-        margin-top: 120px;
-    }
-
-    .mt-300 {
-        margin-top: 120px;
-    }
-
-    .onas-section {
-        padding-top: 120px;
-    }
-
-    .pb-240 {
-        padding-bottom: 120px;
-    }
-
-    .onas-shape-3,.onas-shape-2,.onas-shape-1, .kogo-shape-1, .kogo-shape-2 {
-        display: none;
-    }
-
-    #dlaczego .mt-240 {
-        margin-top: 20px;
-    }
-
-    .recrut-steps {
-        flex-direction: column;
-    }
-
-    .pt-240 {
-        padding-top: 120px;
-    }
-
-    .feedback-text {
-        font-size: 18px;
-    }
-
-    .benefity-section .mt-120 {
-        margin-top: 0;
-    }
-    .circle {
-        margin-top: 60px;
-    }
-
-    .slider-item {
-        flex-direction: column;
-        min-width: 350px;
-        max-width: 350px;
-        height: 410px;
-    }
-    .mb-80 {
-        margin-bottom: 0;
+    p {
+        padding-top: 30px;
     }
 }
-
-

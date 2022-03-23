@@ -1,0 +1,36 @@
+.onas-section {
+    padding: 250px 250px 200px;
+    background-color: #002856;
+    text-align: center;
+}
+
+.onas-section > .g-text {
+    color: #fff;
+
+}
+
+.onas-shape {
+    position: absolute;
+    right: -50px;
+    bottom: 30px;
+    user-select: none;
+}
+
+
+@media (max-width: 1367px) {
+    .onas-section {
+        padding: 200px 80px 150px;
+    }
+
+    .onas-shape {
+        width: 65px;
+        height: 52px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .onas-section {
+        padding: 150px 25px 120px;
+    }
+}

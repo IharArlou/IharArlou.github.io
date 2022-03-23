@@ -1,0 +1,118 @@
+.info-section {
+    margin-top: 144px;
+    z-index: 10;
+    padding-left: 197px;
+    padding-bottom: 245px;
+}
+
+.info-section main {
+    display: flex;
+}
+
+.info-header {
+    color: #001021;
+}
+
+.info-map {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    user-select: none;
+}
+
+.info-map-section {
+    position: relative;
+    width: 860px;
+    z-index: 2;
+    margin-left: 135px;
+}
+
+.info-important {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    color: #002856;
+    font-weight: bold;
+}
+
+.info-important-gray {
+    color: #757575;
+}
+
+.info-shape {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+    user-select: none;
+    z-index: -1;
+}
+
+.info-shapes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.info-shapes img {
+    padding: 9px;
+    user-select: none;
+}
+
+.info-text-section {
+    max-width: 726px;
+}
+
+@media (max-width: 1367px) {
+    .info-shapes img {
+        width: 65px;
+        height: 52px;
+        padding: 3px;
+    }
+
+    .info-shape {
+        width: 65px;
+        height: 52px;
+        left: -20px;
+        top: 150px;
+    }
+
+    .info-section {
+        margin-top: 77px;
+        padding-left: 80px;
+        padding-bottom: 150px;
+    }
+
+    .info-map-section {
+        margin-left: 20px;
+    }
+
+    .info-map {
+        height: 600px;
+        width: 800px;
+    }
+
+    .info-text-section {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 900px) {
+    .info-shape {
+        position: absolute;
+        right: -20px;
+        top: 50px;
+        left: revert;
+    }
+
+    .info-section {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 50px;
+    }
+
+    .info-text-section {
+        max-width: 100%;
+    }
+
+    .info-map-section {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+.dlaczego-section {
+    padding-left: 275px;
+    padding-right: 230px;
+    display: flex;
+    padding-top: 164px;
+}
+
+.dlaczego-section span {
+    font-family: 'Franklin Gothic Demi', sans-serif;
+}
+
+.dlaczego-section-header {
+    padding-right: 242px;
+    padding-top: 116px;
+}
+
+.dlaczego-section p:first-child {
+    padding-top: 0;
+}
+
+@media (max-width: 1367px) {
+    .dlaczego-section {
+        padding-left: 120px;
+        padding-right: 80px;
+        display: flex;
+        padding-top: 150px;
+    }
+
+    .dlaczego-section-header {
+        padding-right: 80px;
+        padding-top: 116px;
+    }
+}
+
+@media (max-width: 900px) {
+    .dlaczego-section {
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+    }
+
+    .dlaczego-section-header {
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 75px;
+    }
+    .dlaczego-section p:first-child {
+        padding-top: 30px;
+    }
+}

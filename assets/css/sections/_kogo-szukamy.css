@@ -1,0 +1,134 @@
+.kogo-szukamy {
+    padding-top: 80px;
+    padding-left: 275px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kogo-szukamy-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.kogo-szukamy-header {
+    max-width: 583px;
+    position: relative;
+    padding-top: 240px;
+}
+
+.kogo-szukamy-box-link:hover, .kogo-szukamy-box-link:hover > span {
+    color: #F3F3F3;
+}
+
+.kogo-szukamy-box-link {
+    font-family: 'Franklin Gothic Book', sans-serif;
+    border: 3px solid #E5E5E5;
+    text-align: center;
+    border-bottom: transparent;
+    text-decoration: none;
+    background: #FAFAFA;
+    height: 318px;
+    width: 665px;
+    line-height: 318px;
+    color: #757575;
+}
+
+.kogo-szukamy-box-link-last {
+    border-bottom: 3px solid #E5E5E5;
+}
+
+.kogo-szukamy-shapes {
+    position: absolute;
+    right: 370px;
+    bottom: 0;
+    z-index: -10;
+}
+
+.kogo-szukamy-shapes img {
+    padding: 9px;
+}
+
+.kogo-szukamy-links .info-important {
+    color: #000;
+}
+
+.kogo-szukamy-arrow {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+@media (max-width: 1367px) {
+    .kogo-szukamy {
+        padding-left: 80px;
+    }
+
+    .kogo-szukamy-shapes {
+        bottom: 0;
+        right: 105px;
+    }
+
+    .kogo-szukamy-box-link {
+        height: 229px;
+        width: 403px;
+        line-height: 229px;
+    }
+
+    .kogo-szukamy-arrow img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    .kogo-szukamy-box-link {
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .kogo-szukamy {
+        flex-direction: column;
+        padding: 0 0 80px;
+    }
+
+    .kogo-szukamy-arrow {
+        display: none;
+    }
+
+    .kogo-szukamy-shapes {
+        bottom: 30px;
+        right: 0;
+    }
+
+    .kogo-szukamy-shapes img {
+        width: 65px;
+        height: 52px;
+        padding: 3px;
+    }
+
+    .kogo-szukamy-links {
+        align-items: center;
+    }
+
+    .kogo-szukamy-box-link {
+        width: 100%;
+    }
+
+    .kogo-szukamy-header {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+
+    .kogo-szukamy-header h1 {
+        margin-left: 85px;
+    }
+
+    .kogo-szukamy-header p {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}

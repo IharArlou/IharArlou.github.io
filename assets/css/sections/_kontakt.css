@@ -1,0 +1,94 @@
+.kontakt-section {
+    padding-top: 260px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.kontakt-section p {
+    margin: 0;
+}
+
+.kontakt-addresses {
+    max-width: 1036px;
+    padding-top: 80px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.kontakt-section h1 {
+    padding-bottom: 80px;
+}
+
+.kontakt-addresses span {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: #002856;
+    line-height: 51px;
+}
+
+.kontakt-section footer a img {
+    user-select: none;
+}
+
+.kontakt-section footer {
+    padding-top: 41px;
+}
+
+.kontakt-section .g-email {
+    text-decoration: none;
+    font-family: 'Fira Code Medium', sans-serif;
+}
+
+.kontakt-addresses p {
+    padding-top: 0;
+}
+
+@media (max-width: 1367px) {
+    .kontakt-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+@media (max-width: 900px) {
+    .kontakt-section {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 40px;
+    }
+
+    .kontakt-section {
+        padding-top: 100px;
+        text-align: left;
+    }
+
+    .kontakt-section h1 {
+        margin-left: 65px;
+        padding-bottom: 40px;
+    }
+
+    .kontakt-section p {
+        text-align: center;
+    }
+
+    .kontakt-addresses {
+        text-align: center;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .kontakt-addresses div {
+        margin-bottom: 20px;
+    }
+
+    .kontakt-addresses p, .kontakt-addresses span {
+        padding-top: 0;
+        line-height: 35px;
+    }
+
+    .kontakt-section footer {
+        padding-top: 20px;
+    }
+}

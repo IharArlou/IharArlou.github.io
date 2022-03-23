@@ -1,7 +1,7 @@
 let prev = document.querySelector('.prev');
 let next = document.querySelector('.next');
 
-let sliderItems = document.getElementsByClassName('slider-item');
+let sliderItems = document.getElementsByClassName('feedback-slider-item');
 
 let l = 0;
 let movePer = 0;
