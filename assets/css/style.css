@@ -1,17 +1,3 @@
-@import "../../assets/css/fonts/fonts.css";
-@import "../../assets/css/navbar.css";
-
-@import "../../assets/css/sections/_info-section.css";
-@import "../../assets/css/sections/_onas.css";
-@import "../../assets/css/sections/_dlaczego.css";
-@import "../../assets/css/sections/_kogo-szukamy.css";
-@import "../../assets/css/sections/_recrit.css";
-@import "../../assets/css/sections/_benefity.css";
-@import "../../assets/css/sections/_kontakt.css";
-
-@import "../../assets/css/sliders/feedbacks-slider.css";
-@import "../../assets/css/sliders/gallery-slider.css";
-
 body {
     background-color: #FAFAFA;
     overflow-x: hidden;
